@@ -1,0 +1,104 @@
+:root {
+  --all-bg: #fafbfd;
+  --text-color: #000;
+  --primary-color: #4285f4;
+  --gray-color: #616161;
+  --secondery-color: #ec5863;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: var(--all-bg);
+  overflow-x: hidden;
+}
+.btn {
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 12px;
+  padding: 15px 30px;
+  letter-spacing: 0.14em;
+  border: none;
+  outline: none;
+  color: #fcfdfe;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translateY(-1000px);
+  background-color: #000;
+  transition: 0.5s;
+}
+.popup iframe {
+  width: 800px;
+  height: 450px;
+}
+.showPopup {
+  transform: translate(-50%, -30%);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.webText h2 {
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 126%;
+}
+
+.webText p {
+  letter-spacing: 0.08em;
+  font-size: 15px;
+  line-height: 138.5%;
+  width: 65%;
+  color: var(--gray-color);
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+@media (max-width: 900px) {
+  .popup iframe {
+    width: 500px;
+    height: 280px;
+  }
+  .container {
+    width: 95%;
+  }
+  .webText h2 {
+    font-size: 35px;
+  }
+
+  .webText p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 800px) {
+  .popup iframe {
+    width: 300px;
+    height: 180px;
+  }
+  .container {
+    width: 90%;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 30px;
+    padding: 30px 0;
+  }
+  .webText p {
+    width: 90%;
+    margin:20px auto;
+  }
+}

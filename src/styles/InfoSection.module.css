@@ -1,0 +1,76 @@
+.InfoSection {
+  padding: 80px 0;
+}
+.counter {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+.counterBox {
+  background-color: white;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  border-radius: 16px;
+  box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+  padding: 35px 0;
+  margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+.counterBox div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.counterBox div h5 {
+  color: var(--secondery-color);
+  letter-spacing: 3px;
+  font-size: 36px;
+}
+.counterBox div span {
+  letter-spacing: 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.largeAngel {
+  position: absolute;
+  top:0px;
+  right: 150px;
+  transform: rotate(310deg);
+  z-index: -1;
+  width: 130px;
+}
+.mediumAngel{
+   position: absolute;
+  right: 600px;
+  top:-50px;
+  transform: rotate(90deg);
+  z-index: -1;
+  width: 130px;
+}
+.smallAngel{
+  position: absolute;
+  top: 80px;
+  left: 180px;
+  transform: rotate(150deg);
+  z-index: -1;
+}
+
+@media(max-width:800px){
+  .counterBox{
+    flex-direction: column;
+  }
+  .counterBox div{
+    margin: 15px 0;
+  }
+  .expertsImg{
+    width: 100%;
+  }
+  .expertsImg img{
+  width: 100%;
+}
+}

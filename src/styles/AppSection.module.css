@@ -1,0 +1,9 @@
+.AppSection {
+  background-color: white;
+  padding: 80px 0;
+}
+.appImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
